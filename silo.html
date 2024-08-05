@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fristcss.css">
+    <title>Yegna Gebeya</title>
+</head>
+<body id="bg">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logo.jpg" class="logo" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="#" onclick="silo.html">Home</a></li>
+            <li><a href="#" onclick="aboutbutton(true)">About Us</a></li>
+            <li><a href="#" onclick="fqabutton(true)">FAQ</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div id = "alert" class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong id="type">  </strong><strong id="mesage"></strong>
+    </div>
+    
+    <div id="about" class="about-popup">
+      <div class="about-card">
+          <button onclick="aboutbutton(false)" class="close-button">&times;</button>
+          <img class="profile-img" src="./logo.jpg" alt="Profile Picture">
+          <h5 >Welcome to Yegna Gebeya, your premier online marketplace where trust and convenience meet to create a seamless shopping experience. We are more than just a platform; we are a community of verified sellers and discerning buyers, dedicated to bringing you a diverse range of products at the touch of a button.
+              <br><h5>For Sellers: </h5> Yegna Gebeya offers a trustworthy environment where you can showcase your products to a broad audience. With our easy-to-use platform, you can upload pictures, descriptions, and set competitive prices for your items, ensuring they get the visibility they deserve.
+              <br><h5>For Buyers:</h5> Our platform is designed with you in mind. Browse through a vast selection of goods, compare prices, and read detailed descriptions to make informed purchases that suit your needs and preferences. At Yegna Gebeya, your satisfaction is our priority.
+              <br><h5>Connect With Us:</h5> We believe in building strong relationships with our users. Whether you're looking to sell your products or searching for the perfect buy, our dedicated team is here to support you every step of the way. Reach out to us at <a href="yabetsd29@gmail.com ">yabetsd29@gmail.com </a> or <a href="kalebademkisho@gmail.com">kalebademkisho@gmail.com</a>, or give us a call at +251963488972.
+              Join the Yegna Gebeya family today and experience the future of online shopping in Ethiopia!</p>
+      </div>
+  </div>
+
+  
+  <div id="fqa" class="fqa-popup">
+    <div class="fqa-card">
+        <button onclick="fqabutton(false)" class="close-button">&times;</button>
+        <img class="profile-img" src="./logo.jpg" alt="Profile Picture">
+    <h5>
+        Frequently Asked Questions (FAQs)
+<h5>What is Yegna Gebeya?</h5>
+Yegna Gebeya is an innovative online marketplace connecting trusted sellers with buyers in Ethiopia. Sellers can list their products with images, descriptions, and prices, while buyers can easily search, select, and purchase their preferred items.
+<br><h5>How do I buy a product on Yegna Gebeya?</h5>
+Simply browse through our extensive catalog of products, choose the one you like, and click on the 'Buy Now' button. Follow the prompts to complete your purchase.
+<br><h5>How can sellers list their products?</h5>
+If you're a seller, sign up for an account, and once verified, you can start adding your products by uploading pictures, writing descriptions, and setting your price.
+<br><h5>Is it safe to buy on Yegna Gebeya?</h5>
+Absolutely! We prioritize the safety and trust of our community. All sellers are verified, and we ensure secure payment methods for a worry-free transaction.
+<br><h5></h5>What kind of products can I find on Yegna Gebeya?</h5>
+We offer a wide range of products across various categories including electronics, fashion, home goods, and more. There's something for everyone!
+<h5>How can I contact Yegna Gebeya?</h5>
+For any inquiries or support, email us at yabetsd29@gmail.com or kalebademkisho@gmail.com, or call us at +251963488972.
+<br><h5>Can I return a product?</h5>
+Yes, products can be returned within a specified period as per our return policy, provided they are in their original condition.
+<br><h5>What are the delivery charges?</h5>
+Delivery charges vary depending on the size and weight of the product, as well as the delivery location. These will be clearly stated at the time of purchase.
+<br><h5>How long does delivery take?</h5>
+Delivery times vary based on the seller and your location. Estimated delivery times will be provided when you place your order.
+<h5>How can I track my order?</h5>
+Once your order is shipped, you will receive a tracking number that you can use to check the status of your delivery.
+      </p>
+    </div>
+</div>
+
+
+
+<div id="con" class="con">
+    <div id="container" class="container">
+        <h1>Are you a</h1>
+        <button type="submit" onclick="buybutton()">Buyer</button>
+        <span>or</span>
+        <button type="submit" onclick="sellbutton()">Seller</button>
+    </div>
+
+
+  <div id ="containe" class="containe">
+    <div class="title"><span class="back-button" onclick="backbuttton('container','containe')"> <<</span> Sign In</div>
+    <div class="content">
+      <form id="subform" >
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="password" placeholder="Enter your password" required>
+          </div>
+        </div>
+      
+        <div class="button">
+          <input  id="signin" type="button" value="SIGN IN">
+        </div>
+        
+      
+      </form>
+      <h6>if you  don`t have account <input  id="sub" type="submit" class="signbutton" value="SIGN UP"></h6>
+    </div>
+  </div>
+
+
+
+  <div id ="containe1"  class="containe">
+  
+    <div class="title"> <span class="back-button" onclick="backbuttton('containe','containe1')"> <<</span> SIGN UP</div>
+    <div class="content">
+      <form id="formdatareg" >
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" name="phonenumber" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" name="confirmpassword" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box" id="company">
+            <span class="details">sell Type</span>
+            <select name="type" class="selectmain">
+              <option value="Electronics">Electronics</option>
+              <option value="agriculture and food">agriculture and food</option>
+              <option value="ferniture">ferniture</option>
+              <option value="Book">Book</option>
+              <option value="veicle">veicle</option>
+              <option value="clothing">clothing</option>
+              <option value="machinery">machinery</option>
+              <option value="Home">Home</option>
+              <option value="health and beauty">health and beauty</option>
+              <option value="babies and kids">babies and kids</option>
+            </select>
+          </div>
+          
+          <div class="upload">
+            <label for="fileInput" class="upload-label">
+                <p class="inv">Drag and drop a picture for this profile pic  OR click Here</p>
+                <input type="file" accept="image/*" id="fileInput" required>
+                <img id="previewImage"  src="#">
+            </label>
+        </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" name="gender" value="male" id="dot-1">
+          <input type="radio"name="gender" name="gender" value="female" id="dot-2">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          </div>
+        </div>
+        <div class="button">
+          <input id="reg" type="button" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<address>
+  Mr. Yabets Desalegn <br>
+  web developer and Graphics designer <br>
+  phone: +251 963 488 972 <br> 
+  Addis Ababa <br>
+  <a href="mailto:yabetsd29@gmail.com"> Email </a>
+  </address>
+
+<script src="./backjs/form.js"></script>
+<script src="./js/script1.js"></script>
+<script src="./js/sellerjs.js"></script>
+
+</body>
+</html>
